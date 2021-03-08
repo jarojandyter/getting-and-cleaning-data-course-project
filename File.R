@@ -1,5 +1,5 @@
-setwd("D:\\R\\Course Project")
-getwd()      
+#setwd("D:\\R\\Course Project")
+#getwd()      
 
 #download zip file and extract zip file
 library(downloader)

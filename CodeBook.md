@@ -43,8 +43,8 @@ Activity column has 6 types as listed below.
 
 # Variables 
 The tidy data contains 180 rows and 69 columns (66 variables (mean) and 3 for subject & activity identifiers).
-1	subjectId
-2	ActivityId
+*1	subjectId
+*2	ActivityId
 3	ActivityName
 4	tBodyAcc-mean()-X
 5	tBodyAcc-mean()-Y

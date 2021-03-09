@@ -1,4 +1,4 @@
-##Getting and Cleaning Data - peer assessment project
+#Getting and Cleaning Data - peer assessment project
 
 The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis. You will be graded by your peers on a series of yes/no questions related to the project. You will be required to submit: 1) a tidy data set as described below, 2) a link to a Github repository with your script for performing the analysis, and 3) a code book that describes the variables, the data, and any transformations or work that you performed to clean up the data called CodeBook.md. You should also include a README.md in the repo with your scripts. This repo explains how all of the scripts work and how they are connected.
 
@@ -21,7 +21,7 @@ You should create one R script called run_analysis.R that does the following.
 #In the run_analysis.R script, were recreated each step.
 This file 'run_analysis.R' contains all the code to perform the analyses described in the 5 steps. They can be launched in RStudio by just importing the file.
 
-About this R script
+#About this R script
 The original data was modified by using the following steps:
 1) Merging the training and the test sets to create one dataset.
 2) Appropriately labeling the data set with descriptive variable names.
@@ -29,7 +29,7 @@ The original data was modified by using the following steps:
 4) Using descriptive activity names to name the activities in the data set by adding a new column ActivityName
 5) Creating a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-Description
+#Description
 Identifiers:
 1) subjectId : The id of the subject. Subject column is numbered sequentially from 1 to 30.
 2) ActivityId and ActivityName : The activity done during the tests

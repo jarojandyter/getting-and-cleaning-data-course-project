@@ -1,5 +1,3 @@
-setwd("D:\\R\\Course Project")
-getwd()      
 
 #download zip file and extract zip file
 library(downloader)
@@ -42,13 +40,10 @@ colnames(AllData) <- c("subjectId","ActivityId",features[,2])
 MeanAndStdTF <- grepl("ActivityId", colnames(AllData)) | grepl("subjectId", colnames(AllData)) | grepl("std", colnames(AllData)) | ( grepl("mean", colnames(AllData)) & !grepl("meanFreq", colnames(AllData)) )
 MeanAndStd <- AllData[,  MeanAndStdTF]
 
-MeanAndStd
 #Uses descriptive activity names to name the activities in the data set
 MeanAndStd$ActivityName = Activities[Activities$ActivityId == "3",][["ActivityName"]]
 
 #creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-#library(reshape2)
-#MeanAndStdmelted <- melt(MeanAndStd, id = c("subjectId", "ActivityId", "ActivityName"))
 tidyDataSet <- aggregate(.~ subjectId + ActivityId + ActivityName ,MeanAndStd , mean)
 
 write.table(tidyDataSet, "tidyDataSet.txt", row.name=FALSE)
